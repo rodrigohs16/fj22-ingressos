@@ -17,7 +17,7 @@ public class SessaoController {
 	private FilmeDao filmeDao;
 	
 	@GetMapping("/admin/sessao")
-	public ModelAndView form(@RequestParam("salaid") Integer salaId){
+	public ModelAndView form(@RequestParam("salaId") Integer salaId){
 		
 		ModelAndView modelAndView = new ModelAndView("sessao/sessao");
 		
