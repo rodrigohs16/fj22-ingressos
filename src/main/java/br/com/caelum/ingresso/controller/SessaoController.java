@@ -57,7 +57,7 @@ public class SessaoController {
 		
 		if(gerenciador.cabe(sessao)){
 			sessaoDao.save(sessao);
-			return new ModelAndView("redirect:admin/sala" + form.getSalaId() + "/sessoes");
+			return new ModelAndView("redirect:/admin/sala/" + form.getSalaId() + "/sessoes");
 		}
 		
 		
